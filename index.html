@@ -1,103 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An electronic portfolio showcasing my experiences and accomplishments.">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: "Times New Roman", serif; /* Updated font family */
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #5899E2;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            padding: 0;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        main {
-            display: flex;
-            padding: 20px;
-        }
-
-        .bio-section {
-            flex: 1; /* Take all available space */
-            margin-left: 20px; /* Margin to the left for spacing */
-            background-color: #f9f9f9; /* Light background for contrast */
-            border-radius: 8px; /* Rounded corners */
-            padding: 15px; /* Padding inside the box */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-        .bio-image {
-            flex: 0 0 50%; /* Increased fixed width for the image */
-            max-width: 500px; /* Set max width for the image */
-        }
-
-        .bio-image img {
-            width: 100%; /* Make the image responsive */
-            border-radius: 8px; /* Optional: rounded corners */
-        }
-
-        footer {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Electronic Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="work.html">Work Based Learning</a></li>
-                <li><a href="extracurriculars.html">Extracurriculars</a></li>
-                <li><a href="certifications.html">Certifications and Proof</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="extracurriculars.html">Extracurriculars & Hobbies</a></li>
+            <li><a href="#contact" onclick="scrollToContact()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>Welcome to My Portfolio</h1>
-    </header>
+        <p>High School Coder | Innovator | Problem Solver</p>
+        <a href="about.html" class="btn">Learn More</a>
+    </section>
 
-    <main>
-        <div class="bio-image">
-            <img src="your-image-url.jpg" alt="Your Image">  <!-- Replace with your actual image URL -->
-        </div>
-        <div class="bio-section">
-            <h2>Introduction</h2>
-            <p>Welcome to my portfolio! Here you can find information about my skills, experiences, and more.</p>
-        </div>
-    </main>
+    <!-- Contact Section (scrollable) -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" onsubmit="return handleFormSubmit()">
+            <input type="text" placeholder="Your Name" id="name" required />
+            <input type="email" placeholder="Your Email" id="email" required />
+            <textarea placeholder="Your Message" id="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-response"></div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p>2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">🌐</a>
+            <a href="#" target="_blank">🐦</a>
+            <a href="#" target="_blank">📸</a>
+        </div>
     </footer>
-</body>
 
+    <script src="index.js"></script>
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+</body>
 </html>
