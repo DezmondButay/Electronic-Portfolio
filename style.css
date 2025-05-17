@@ -293,34 +293,28 @@ footer {
         text-align: center;
     }
 }
-.extracurriculars-container {
+
+/* New extracurriculars & hobbies layout */
+.extracurriculars-section .extracurriculars-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 40px;
-    padding: 0 20px;
 }
 
-.left-image img,
-.right-image img {
-    width: 200px;
+.left-img,
+.right-img {
+    width: 150px;  /* smaller width */
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-@media(max-width: 768px) {
-    .extracurriculars-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-image img,
-    .right-image img {
-        width: 100%;
-        max-width: 300px;
-    }
+.skills-list {
+    list-style: none;
+    max-width: 400px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    padding: 0 15px;
 }
