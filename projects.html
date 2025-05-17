@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Projects</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* simple styling to keep iframe size consistent inside cards */
+      .project-card iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -24,21 +34,23 @@
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project-card">
-                <img src="placeholder-project1.jpg" alt="Project 1" />
-                <h3>Interactive Quiz App</h3>
-                <p>A web-based quiz game built with HTML, CSS, and JavaScript.</p>
+                <img src="images/projects/Screenshot 2025-05-16 11.25.25 PM.jpg" alt="Mondrian Project Screenshot" />
+                <h3>Mondrian Project</h3>
+                <p>A visually inspired interactive art project inspired by Piet Mondrian’s style, combining color blocks and dynamic patterns.</p>
                 <button class="view-btn" onclick="alert('Project details coming soon!')">View Details</button>
             </div>
+
             <div class="project-card">
-                <img src="placeholder-project2.jpg" alt="Project 2" />
-                <h3>Personal Portfolio Website</h3>
-                <p>This website itself! Showcasing my skills and projects.</p>
+                <iframe src="https://imical.github.io/DigitalClock/" title="Coded Clock"></iframe>
+                <h3>Coded Clock</h3>
+                <p>A self coded clock that works and counts hours, minutes, and seconds.</p>
                 <button class="view-btn" onclick="alert('Project details coming soon!')">View Details</button>
             </div>
+
             <div class="project-card">
-                <img src="placeholder-project3.jpg" alt="Project 3" />
-                <h3>Simple To-Do List</h3>
-                <p>A productivity app to organize tasks, built with JavaScript.</p>
+                <img src="images/projects/Screenshot 2025-05-16 11.40.25 PM.jpg" alt="Pop-up Penguins Game Screenshot" />
+                <h3>Pop-up Penguins</h3>
+                <p>A self coded game where you have to click on the patch of snow to find the penguins until you find a yeti. Play it for yourself!</p>
                 <button class="view-btn" onclick="alert('Project details coming soon!')">View Details</button>
             </div>
         </div>
@@ -46,7 +58,7 @@
 
     <!-- Footer -->
     <footer>
-               <p>&copy; 2024 Dezmond Butay. All rights reserved.</p>
+        <p>&copy; 2024 Dezmond Butay. All rights reserved.</p>
         <div class="social-icons">
             <a href="#" target="_blank">Contact Me!</a>
             <a href="#" target="_blank">Phone number: (808) 722-4454</a>
