@@ -294,7 +294,7 @@ footer {
     }
 }
 
-/* New extracurriculars & hobbies layout */
+/* Extracurriculars & Hobbies images and layout */
 .extracurriculars-section .extracurriculars-container {
     display: flex;
     align-items: center;
@@ -305,16 +305,8 @@ footer {
 
 .left-img,
 .right-img {
-    width: 150px;  /* smaller width */
+    width: 100px;  /* significantly smaller width */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.skills-list {
-    list-style: none;
-    max-width: 400px;
-    color: #FFFFFF;
-    font-size: 1.2em;
-    padding: 0 15px;
 }
