@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Projects</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .project-card iframe {
-        width: 100%;
-        height: 200px;
-        border: none;
-        display: block;
-        margin-bottom: 10px;
-      }
-    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -23,7 +14,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html">Projects & Work Based Learning</a></li>
             <li><a href="extracurriculars.html">Extracurriculars & Hobbies</a></li>
         </ul>
     </nav>
@@ -32,25 +23,28 @@
     <section class="section">
         <h2>Projects</h2>
         <div class="projects-container">
+            <!-- Mondrian Project -->
             <div class="project-card">
-                <img src="images/projects/Screenshot 2025-05-16 11.25.25 PM.jpg" alt="Mondrian Project Screenshot" />
+                <img src="images/projects./Screenshot 2025-05-16 11.25.25 PM.jpg" alt="Mondrian Project" />
                 <h3>Mondrian Project</h3>
-                <p>An art project using code to recreate a Mondrian-style abstract design.</p>
+                <p>A simple abstract art design made using CSS and HTML.</p>
                 <button class="view-btn" onclick="alert('Project details coming soon!')">View Details</button>
             </div>
 
+            <!-- Coded Clock -->
             <div class="project-card">
-                <iframe src="https://imical.github.io/DigitalClock/" title="Coded Clock"></iframe>
+                <iframe src="https://imical.github.io/DigitalClock/" width="300" height="150" style="border:none;"></iframe>
                 <h3>Coded Clock</h3>
                 <p>A self coded clock that works and counts hours, minutes, and seconds.</p>
-                <button class="view-btn" onclick="alert('Project details coming soon!')">View Details</button>
+                <button class="view-btn" onclick="window.open('https://imical.github.io/DigitalClock/', '_blank')">View Clock</button>
             </div>
 
+            <!-- Pop-up Penguins -->
             <div class="project-card">
-                <img src="images/projects/Screenshot 2025-05-16 11.40.25 PM.jpg" alt="Pop-up Penguins Game Screenshot" />
+                <img src="images/projects./Screenshot 2025-05-16 11.40.25 PM.jpg" alt="Pop-up Penguins" />
                 <h3>Pop-up Penguins</h3>
                 <p>A self coded game where you have to click on the patch of snow to find the penguins until you find a yeti. Play it for yourself!</p>
-                <button class="view-btn" onclick="alert('Project details coming soon!')">View Details</button>
+                <button class="view-btn" onclick="alert('Project details coming soon!')">View Game</button>
             </div>
         </div>
     </section>
@@ -66,4 +60,3 @@
     </footer>
 </body>
 </html>
-
