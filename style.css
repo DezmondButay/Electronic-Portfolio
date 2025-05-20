@@ -294,21 +294,24 @@ footer {
     }
 }
 
-/* Extracurriculars & Hobbies images and layout */
-.extracurriculars-section .extracurriculars-container {
-   display: flex;
+.extracurriculars-section {
+    display: flex;
+    justify-content: space-between; /* pushes images to the far left and right */
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    padding: 20px; /* optional padding for spacing */
 }
 
+/* Left image on the far left with some margin to the left if needed */
 .left-img {
-    width: 300px; /* increase the width */
-    height: 500px; /* increase the height */
+    width: 300px; /* wider size as desired */
+    height: 500px; /* taller height */
+    margin-left: 80px; /* optional, to push it further left */
 }
 
+/* Right image on the far right, with optional margin */
 .right-img {
-    width: 400px; /* increase the width */
-    height: 300px; /* increase the height */
+    width: 400px; /* wider */
+    height: 200px; /* taller height */
+    margin-right: 80px; /* optional, to push it further right */
+}
 
