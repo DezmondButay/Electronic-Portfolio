@@ -308,12 +308,11 @@ footer {
 }
 
 .left-img {
-    margin-left: 25px; /* adjust the left margin */
     width: 300px; /* increase the width */
     height: 500px; /* increase the height */
 }
 
 .right-img {
-    margin-left: auto; /* use auto margin to center it */
     width: 400px; /* increase the width */
     height: 300px; /* increase the height */
+
