@@ -302,11 +302,18 @@ footer {
     gap: 20px;
     flex-wrap: wrap;
 }
-
-.left-img,
-.right-img {
-    width: 280px;  /* half size */
-    height: 435px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.extracurriculars-section {
+    display: flex;
+    align-items: center;
 }
+
+.left-img {
+    margin-left: 80px; /* adjust the left margin */
+    width: 400px; /* increase the width */
+    height: 600px; /* increase the height */
+}
+
+.right-img {
+    margin-left: auto; /* use auto margin to center it */
+    width: 600px; /* increase the width */
+    height: 450px; /* increase the height */
