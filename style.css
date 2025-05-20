@@ -302,10 +302,6 @@ footer {
     gap: 20px;
     flex-wrap: wrap;
 }
-.extracurriculars-section {
-    display: flex;
-    align-items: center;
-}
 
 .left-img {
     width: 300px; /* increase the width */
