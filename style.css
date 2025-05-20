@@ -305,8 +305,8 @@ footer {
 
 .left-img,
 .right-img {
-    width: 200px;  /* half size */
-    height: 250px;
+    width: 250px;  /* half size */
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
